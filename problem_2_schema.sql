@@ -1,12 +1,8 @@
-DROP SCHEMA public CASCADE;
-CREATE SCHEMA public
-    AUTHORIZATION postgres;
-
 CREATE TABLE students(
 	id SERIAL NOT NULL PRIMARY KEY,
 	snum TEXT NOT NULL,
 	grade float NOT NULL,
-	date_of_grading DATE NOT NULL,
+	date_of_grading DATE NOT NULL
 	/*UNIQUE(snum,grade,date_of_grading)*/
 );
 
