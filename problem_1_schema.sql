@@ -1,5 +1,3 @@
-DROP SCHEMA public CASCADE;
-CREATE SCHEMA public;
 CREATE TABLE fields (
 	number SERIAL NOT NULL PRIMARY KEY,
 	land_area REAL NOT NULL,
