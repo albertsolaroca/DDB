@@ -32,5 +32,5 @@ INSERT INTO employees(name, salary) VALUES ('Poopy Harlow', 75000);
 
 UPDATE employees SET salary=25000 WHERE salary < 25000;
 
-SELECT E.name, LOGS.occurred_at AS logs
+SELECT E.name, LOGS.occurred_at AS time_stamp
 		FROM 	employees AS E, employee_audit_log AS LOGS WHERE E.id = LOGS.employee_id;
