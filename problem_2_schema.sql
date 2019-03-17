@@ -3,7 +3,6 @@ CREATE TABLE students(
 	snum TEXT NOT NULL,
 	grade float NOT NULL,
 	date_of_grading DATE NOT NULL
-	/*UNIQUE(snum,grade,date_of_grading)*/
 );
 
 INSERT INTO students VALUES(
